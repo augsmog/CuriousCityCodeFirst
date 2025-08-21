@@ -1,0 +1,21 @@
+# CuriousCity Code-First Project
+## Migrated from CuriousCityAutomated
+
+This project has been fully migrated to a code-first architecture.
+All scenes are generated procedurally.
+
+## Key Systems:
+- Player Controller: 2.0 mouse sensitivity, 3m interaction range
+- Puzzle System: E key interaction, procedural generation
+- Analytics: Learning style tracking integrated
+- Chrona AI: Evolving personality system
+- Mission Manager: Handles all mission flow
+
+## Namespace: CuriousCity.Core
+
+## Build Commands:
+- SceneBuilder.BuildEgyptMission()
+- SceneBuilder.BuildArkBridge()
+- SceneBuilderExtensions.BuildFromMigration()
+
+## All configuration via ScriptableObjects in Resources/
