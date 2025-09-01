@@ -113,6 +113,9 @@ namespace CuriousCity.Core.Puzzles
             // Initial Chrona briefing
             StartCoroutine(InitialMissionBriefing());
         }
+
+        // Placeholder start method referenced by builders
+        public void StartMission(string missionType) { }
         
         private void InitializeExplorationZones()
         {

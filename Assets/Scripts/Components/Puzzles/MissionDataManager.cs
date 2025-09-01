@@ -94,10 +94,10 @@ namespace CuriousCityAutomated.Core
             // Initialize with proper mission data if we have a reference
             if (missionManager != null && missionManager.missionData != null)
             {
-                currentMissionId = missionManager.missionData.missionId;
-                currentMissionName = missionManager.missionData.title;
-                historicalPeriod = missionManager.missionData.historicalPeriod;
-                totalPuzzlesInMission = missionManager.missionData.requiredPuzzleTypes.Count;
+                currentMissionId = missionManager.missionData.MissionId;
+                currentMissionName = missionManager.missionData.Title;
+                historicalPeriod = missionManager.missionData.HistoricalPeriod;
+                totalPuzzlesInMission = missionManager.missionData.RequiredPuzzleTypes.Count;
                 
                 // Update mission results with correct data
                 currentMissionResults.missionId = currentMissionId;

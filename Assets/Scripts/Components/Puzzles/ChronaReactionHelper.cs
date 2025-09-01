@@ -2,7 +2,7 @@
 using UnityEngine;
 using CuriousCityAutomated.Data;
 using CuriousCityAutomated.Core;
-using CuriousCity.Core;
+using CuriousCity.Core.Puzzles;
 using System.Linq;
 
 namespace CuriousCity.Core

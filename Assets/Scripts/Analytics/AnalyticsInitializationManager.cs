@@ -147,7 +147,7 @@ namespace CuriousCity.Analytics
             GameObject player = GameObject.FindGameObjectWithTag("Player");
             if (player != null)
             {
-                var controller = player.GetComponent<Characters.FirstPersonController>();
+                var controller = player.GetComponent<CuriousCity.Core.FirstPersonController>();
                 if (controller == null)
                 {
                     Debug.LogWarning("[AnalyticsInit] FirstPersonController not found on player.");

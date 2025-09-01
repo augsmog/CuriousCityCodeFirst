@@ -1,7 +1,6 @@
 using UnityEngine;
 using System.Collections.Generic;
-using CuriousCity.Characters;  // For FirstPersonController
-using CuriousCity.Gameplay.Puzzles;  // For HistoricalMissionSceneManager
+using CuriousCity.Core;  // For FirstPersonController and mission manager
 using CuriousCity.Analytics;
 
 namespace CuriousCity.Core
