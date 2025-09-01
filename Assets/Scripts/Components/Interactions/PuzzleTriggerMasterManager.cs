@@ -1,6 +1,6 @@
 using UnityEngine;
 using System.Collections.Generic;
-using CuriousCity.Gameplay.Puzzles;
+using CuriousCity.Core;
 
 namespace CuriousCity.Core
 {

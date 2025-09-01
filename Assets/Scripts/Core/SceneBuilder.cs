@@ -140,7 +140,7 @@ namespace CuriousCity.Core
             cameraGO.AddComponent<AudioListener>();
         }
         
-        static void ClearScene()
+        public static void ClearScene()
         {
             // Destroy all non-persistent objects
             foreach (GameObject go in FindObjectsOfType<GameObject>())
@@ -150,6 +150,13 @@ namespace CuriousCity.Core
                     DestroyImmediate(go);
                 }
             }
+        }
+
+        // Simple placeholder for additional missions
+        public static void BuildGreeceMission()
+        {
+            // For now reuse Egypt mission layout
+            BuildEgyptMission();
         }
     }
 }

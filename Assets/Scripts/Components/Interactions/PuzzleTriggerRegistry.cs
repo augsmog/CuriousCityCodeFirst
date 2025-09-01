@@ -1,7 +1,7 @@
 using UnityEngine;
 using System.Collections.Generic;
 using System.Linq;
-using CuriousCity.Gameplay.Puzzles;
+using CuriousCity.Core;
 
 namespace CuriousCity.Core
 {

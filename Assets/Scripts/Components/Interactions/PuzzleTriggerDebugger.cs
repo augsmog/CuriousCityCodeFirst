@@ -1,5 +1,5 @@
 using UnityEngine;
-using CuriousCity.Gameplay.Puzzles;
+using CuriousCity.Core; // For HistoricalMissionSceneManager and puzzles
 
 namespace CuriousCity.Core
 {
@@ -62,7 +62,7 @@ namespace CuriousCity.Core
             if (!enableDebugLogging) return;
             
             // Check for player proximity
-            var player = FindFirstObjectByType<CuriousCityAutomated.Characters.FirstPersonController>();
+            var player = FindFirstObjectByType<CuriousCity.Core.FirstPersonController>();
             if (player != null)
             {
                 float distance = Vector3.Distance(transform.position, player.transform.position);
@@ -82,7 +82,7 @@ namespace CuriousCity.Core
             Gizmos.DrawWireSphere(transform.position, 1.5f);
             
             // Draw raycast direction from player camera
-            var player = FindFirstObjectByType<CuriousCityAutomated.Characters.FirstPersonController>();
+            var player = FindFirstObjectByType<CuriousCity.Core.FirstPersonController>();
             if (player != null)
             {
                 var camera = player.GetComponentInChildren<Camera>();
@@ -106,7 +106,7 @@ namespace CuriousCity.Core
             Debug.Log("[PuzzleTriggerDebugger] Testing puzzle trigger manually...");
             
             // Simulate interaction
-            var player = FindFirstObjectByType<CuriousCityAutomated.Characters.FirstPersonController>();
+            var player = FindFirstObjectByType<CuriousCity.Core.FirstPersonController>();
             if (player != null)
             {
                 puzzleTrigger.Interact(player);

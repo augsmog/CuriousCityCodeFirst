@@ -85,7 +85,7 @@ namespace CuriousCity.Analytics.Analyzers
             if (Physics.Raycast(ray, out hit, interactionRange, interactableLayer))
             {
                 // Check for the Gameplay.Interactions version (the one we're keeping)
-                var interactable = hit.collider.GetComponent<CuriousCityAutomated.Gameplay.Interactions.IInteractable>();
+                var interactable = hit.collider.GetComponent<CuriousCity.Core.IInteractable>();
                 
                 if (interactable != null)
                 {

@@ -2,8 +2,7 @@ using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
-using CuriousCity.Characters;  // Required for FirstPersonController
-using CuriousCity.Gameplay.Puzzles;  // For HistoricalMissionSceneManager
+using CuriousCity.Core;  // For FirstPersonController and mission manager
 using CuriousCity.Data;  // For ArtifactData
 using CuriousCity.Analytics;
 

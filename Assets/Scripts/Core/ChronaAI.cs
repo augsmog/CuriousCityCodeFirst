@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using CuriousCity.Data;
 
 namespace CuriousCity.Core
 {
@@ -165,7 +166,8 @@ namespace CuriousCity.Core
                     targetColor = Color.green;
                     break;
                 case EmotionalTone.Concerned:
-                    targetColor = Color.orange;
+                    // Unity doesn't define Color.orange by default
+                    targetColor = new Color(1f, 0.5f, 0f);
                     break;
                 case EmotionalTone.Excited:
                     targetColor = Color.magenta;
@@ -235,13 +237,18 @@ namespace CuriousCity.Core
             
             return chronaGO;
         }
+
+        // Placeholder methods referenced by other systems
+        public void OnMissionStarted(string missionId) { }
+        public void ProcessMissionChoices(List<PlayerChoice> choices) { }
+        public void TriggerMissionReflection(MissionResults results) { }
     }
 
     /// <summary>
     /// Represents Chrona's personality state and development
     /// </summary>
     [System.Serializable]
-    public class ChronaPersonalityState 
+    public class ChronaPersonalityState : MonoBehaviour
     {
         [Header("Core Traits")]
         public float logicalCore = 1.0f;
@@ -252,7 +259,7 @@ namespace CuriousCity.Core
         public float curiosityLevel = 0.5f;
         public float trustLevel = 0.3f;
         
-        public void UpdatePersonality(bool empatheticAction) 
+        public void UpdatePersonality(bool empatheticAction)
         {
             totalInteractions++;
             

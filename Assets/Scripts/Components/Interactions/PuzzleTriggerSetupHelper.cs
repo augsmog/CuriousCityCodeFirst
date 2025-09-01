@@ -1,5 +1,5 @@
 using UnityEngine;
-using CuriousCity.Gameplay.Puzzles;
+using CuriousCity.Core;
 
 namespace CuriousCity.Core
 {
